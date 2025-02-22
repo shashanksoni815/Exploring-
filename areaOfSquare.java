@@ -6,5 +6,6 @@ public class areaOfSquare {
         int s = sc.nextInt();
         int area = s*s;
         System.out.println(area);
+        sc.close();
     }
 }

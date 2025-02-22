@@ -23,5 +23,6 @@ public class calsi {
                         break;
             default : System.out.println("Wrong Operator");
         }
+        sc.close();
     }
 }

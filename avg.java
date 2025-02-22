@@ -8,5 +8,6 @@ public class avg {
         int C = sc.nextInt();
         float avg = (A + B + C)/3f;
         System.out.println(avg);
+        sc.close();
     }
 }

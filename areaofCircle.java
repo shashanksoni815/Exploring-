@@ -7,5 +7,6 @@ public class areaofCircle {
         int sq = r*r;
         float pi = 3.14f;
         System.out.println((float)sq*pi);
+        sc.close();
     }
 }

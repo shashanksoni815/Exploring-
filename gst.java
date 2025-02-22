@@ -11,5 +11,6 @@ public class gst {
 
         float price = ((total*0.18f) + total);
         System.out.println(price);
+        sc.close();
     }
 }
