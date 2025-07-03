@@ -33,6 +33,7 @@ public class reverse{
         while (n > 0) {
             int s = n % 10;
             rev = (rev * 10) + s;
+            n/=10;
         }
         System.out.println(rev);
         sc.close();
