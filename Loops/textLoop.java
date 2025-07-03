@@ -1,4 +1,4 @@
-package Loops;
+// package Loops;
 
 public class textLoop {
     public static void main(String[] args) {
