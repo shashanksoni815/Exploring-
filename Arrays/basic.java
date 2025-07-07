@@ -43,6 +43,5 @@ public class basic {
         // System.out.println(stringSearch(menu, order));
         int numbers[] = {1, 2, 3, 4, 5,10, 4, 3, 16, 1};
         System.out.println("Largest value of array is : " + largest(numbers));
-        
     }
 }
