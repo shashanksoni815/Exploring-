@@ -23,7 +23,6 @@ public class rainWater {
         }
 
         int result = 0;
-    
         for(int i = 0; i < height.length; i++){
             result = result + (Math.min(left[i] , right[i]) - height[i] );
         }
