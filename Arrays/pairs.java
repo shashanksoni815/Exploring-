@@ -50,7 +50,17 @@ public class pairs {
     }
 
     public static void maxSubarraySum2(int max[]) {
-        
+        int maxSum = Integer.MIN_VALUE;
+        int size = max.length;
+        int sum = 0;
+        int prefix[] = new int[size];
+
+        for (int i = 0; i < max.length; i++) {
+            for (int j = i+1; j < size; j++) {
+                prefix[0] = max[0];
+                prefix[i] = prefix[i] + max[j];
+            }
+        }
     }
 
     public static void main(String[] args) {
