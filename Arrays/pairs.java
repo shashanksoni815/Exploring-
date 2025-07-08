@@ -30,17 +30,23 @@ public class pairs {
     }
 
     public static void maxSubarraySum(int max[]) {
+        int sum = 0;
+        int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < max.length; i++) {
             for (int j = i; j < max.length; j++) {
-                int sum = 0;
+                sum = 0;
                 for (int k = i; k <= j; k++) {
-                    sum += max[j];
+                    sum += max[k];
                 }
-                System.out.print(sum + " ");
-                System.out.println();
+                if (maxSum < sum) {
+                    maxSum = sum;
+                }
+                // System.out.print(sum + " ");
+                // System.out.println();
             }
-            System.out.println();
+            // System.out.println();
         }
+        System.out.println(maxSum);
     }
 
     public static void main(String[] args) {
