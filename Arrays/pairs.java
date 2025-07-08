@@ -49,11 +49,16 @@ public class pairs {
         System.out.println(maxSum);
     }
 
+    public static void maxSubarraySum2(int max[]) {
+        
+    }
+
     public static void main(String[] args) {
         // int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16};
         // // pair(numbers);
         // subArray(numbers);
         int max[] = {1, -2, 6, -1, 3};
         maxSubarraySum(max);
+        maxSubarraySum2(max);
     }
 }
