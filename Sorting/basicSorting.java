@@ -3,8 +3,8 @@ import java.util.Arrays;
 
 public class basicSorting {
 
-    public static void countSort() {
-        int arra[] = {1, 4, 1, 3, 2, 4, 3, 7};
+    public static void countSort(int arra[]) {
+        
         int largest = Integer.MIN_VALUE;
         for (int i = 0; i < arra.length; i++) {
             largest = Math.max(largest, arra[i]);
@@ -23,6 +23,8 @@ public class basicSorting {
                 count[i]--;
             }
         }
+        print(arra);
+        print(count);
 
     }
 
@@ -35,11 +37,14 @@ public class basicSorting {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
         }
+        System.out.println();
         
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 4, 5, 3, 2};
-        inbuildSort(arr);
+        // int arr[] = {1, 4, 5, 3, 2};
+        // inbuildSort(arr);
+        int arra[] = {1, 4, 1, 3, 2, 4, 3, 7};
+        countSort(arra);
     }
 }
