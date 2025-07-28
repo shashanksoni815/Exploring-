@@ -6,9 +6,9 @@ public class IntegerToRoman {
         String romanvalue[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
         for (int i = 0; i < values.length; i++) {
-            if (a >= values[i]) {
+            while (a >= values[i]) {
                 roman = roman + romanvalue[i];
-                a = a-values[i];
+                a -= values[i];
             }
         }
         System.out.println(roman);
