@@ -31,10 +31,15 @@ public class IntegerToRoman {
         System.out.println(integer);
     }
 
+    public static void integerToEnglishWords(int a) {
+        
+    }
+
     public static void main(String[] args) {
-        // int a = 20;
-        // integerToRoman(a);
-        String rom = "XLVII";
-        romanToInteger(rom);
+         int a = 20;
+        // // integerToRoman(a);
+        // String rom = "XLVII";
+        // romanToInteger(rom);
+        integerToEnglishWords(a);
     }
 }
