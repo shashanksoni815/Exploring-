@@ -9,8 +9,18 @@ public class DecrisingOrder {
         System.out.print(n + " ");
         printDec(n - 1);
     }
+
+    public static int naturalNumberSum(int n) {
+        if(n <= 0){
+            return 0;
+        }
+        int f = naturalNumberSum(n-1);
+        int sum = n + f;
+        return sum;
+    }
+
     public static void main(String[] args) {
         int n = 10;
-        printDec(n);
+        System.out.println(naturalNumberSum(n));
     }
 }
