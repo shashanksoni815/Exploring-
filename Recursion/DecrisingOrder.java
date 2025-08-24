@@ -19,6 +19,10 @@ public class DecrisingOrder {
         return sum;
     }
 
+    public static void fibonacci(int n) {
+        
+    }
+
     public static void main(String[] args) {
         int n = 10;
         System.out.println(naturalNumberSum(n));
