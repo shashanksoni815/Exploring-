@@ -29,6 +29,9 @@ public class DecrisingOrder {
         return fib;
     }
 
+    public static void arr(String[] args) {
+        
+    }
     public static void main(String[] args) {
         int n = 6;
         // System.out.println(naturalNumberSum(n));
