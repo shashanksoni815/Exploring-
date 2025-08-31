@@ -69,12 +69,24 @@ public class DecrisingOrder {
         int ans = n * power(n, p-1);
         return ans;
     }
+
+    public static int optimisedPower(int n, int p) {
+        if (p==0) {
+            return 1;
+        }
+        int halfPower = optimisedPower(n, p/2);
+        int halfPowerSq = halfPower * halfPower;
+        if (p%2 != 0) {
+            halfPowerSq = n * halfPowerSq;
+        }
+        return halfPowerSq;
+    }
     
     public static void main(String[] args) {
         // int array[] = {1, 2, 5, 3, 4, 5, 6};
         // System.out.println(naturalNumberSum(n));
         // System.out.println(target(array, 0,5));
         // System.out.println(lastOccuring(array, 0,5));
-        System.out.println(power(2, 8));
+        System.out.println(optimisedPower(2, 10));
     }
 }
