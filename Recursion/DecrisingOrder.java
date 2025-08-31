@@ -51,10 +51,21 @@ public class DecrisingOrder {
         }
         return target(array, i+1, key);
     }
+    public static int lastOccuring(int array[], int i, int key) {
+        if (i == array.length) {
+            return -1;
+        }
+        int isFound =  lastOccuring(array, i+1, key);
+        if( isFound == -1 && array[i] == key){
+            return i;
+        }
+        return isFound;
+    }
     
     public static void main(String[] args) {
-        int array[] = {1, 2, 3, 4, 5, 6};
+        int array[] = {1, 2, 5, 3, 4, 5, 6};
         // System.out.println(naturalNumberSum(n));
         System.out.println(target(array, 0,5));
+        System.out.println(lastOccuring(array, 0,5));
     }
 }
