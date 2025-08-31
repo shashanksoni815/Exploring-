@@ -29,12 +29,21 @@ public class DecrisingOrder {
         return fib;
     }
 
-    public static void arr(String[] args) {
-        
+    public static boolean isSorted(int array[], int i ) {
+        if(i == array.length-1){
+            return true;
+        }
+
+        if (array[i] > array[i+1]) {
+            return false;
+        }
+
+        return isSorted(array, i+1);
+
     }
     public static void main(String[] args) {
-        int n = 6;
+        int array[] = {1, 5, 3, 4, 5, 6};
         // System.out.println(naturalNumberSum(n));
-        System.out.println(fibonacci(n));
+        System.out.println(isSorted(array, 0));
     }
 }
