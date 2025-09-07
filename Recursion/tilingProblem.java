@@ -30,9 +30,26 @@ public class tilingProblem {
 
     }
 
+    public static int friendsParing(int n) {
+        if (n == 1 || n == 2) {
+            return n;
+        }
+        // Single
+        int solo = friendsParing(n - 1);
+        // Combo
+        int combo = friendsParing(n - 2);
+        int pairs = (n-1) * combo;
+
+        // both ways
+        return (solo + pairs);
+    }
+
     public static void main(String[] args) {
         // System.out.println(ways(5));
-        String str = "appnnacollezsrdefsdge";
-        duplicate(str, 0, new StringBuilder("") , new boolean[26]);
+        // String str = "appnnacollezsrdefsdge";
+        // duplicate(str, 0, new StringBuilder("") , new boolean[26]);
+
+        System.out.println(friendsParing(5));
+
     }
 }
