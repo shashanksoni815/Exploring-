@@ -44,12 +44,27 @@ public class tilingProblem {
         return (solo + pairs);
     }
 
+    public static void consecutive(int n, int lastPlace, String str) {
+        if (n == 0 ) {
+            System.out.println(str);
+            return;
+        }
+
+        // kaam
+
+        consecutive(n-1, 0, str+"0");
+        if (lastPlace == 0) {
+            consecutive(n-1, 1, str+"1");
+        }
+    }
+
     public static void main(String[] args) {
         // System.out.println(ways(5));
         // String str = "appnnacollezsrdefsdge";
         // duplicate(str, 0, new StringBuilder("") , new boolean[26]);
 
-        System.out.println(friendsParing(5));
+        // System.out.println(friendsParing(5));
+        consecutive(4, 0, "");
 
     }
 }
