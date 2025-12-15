@@ -12,14 +12,14 @@ public class Revision {
             if(arr[mid] == target) {
                 return mid;
             }
-            if(arr[mid] <= target) {
+            if(arr[mid] < target) {
                 start = mid+1;
             }
-            if (arr[mid] >= target) {
+            if (arr[mid] > target) {
                 end = mid-1;
             } 
         }
-        return -1;
+        return -1; 
     }
     
     public static int largest(int[] arr) {
