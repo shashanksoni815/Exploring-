@@ -2,11 +2,14 @@ package Arrays;
 
 public class subArrays{
     public static void SubArr(int[] arr) {
-        for (int i = 0; i < arr.length-1; i++) {
-            for (int j = i; j < arr.length-1; j++) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                int sum = 0;
                 for (int k = i; k <= j; k++) {
-                    System.out.print(k + " ");
+                    sum += arr[k];
+                    System.out.print(arr[k] + " ");
                 }
+                System.out.print(" '" + sum + "'");
                 System.out.println();
             }
             // System.out.println();
