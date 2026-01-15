@@ -25,5 +25,6 @@ public class changeArr {
     public static void main(String[] args) {
         int arr[] = new int[8];
         inserting(arr, 0, 1);
+        print(arr);
     }
 }
